@@ -1,7 +1,8 @@
 include(test_helpers)
 include(benchmark_helpers)
 
-add_library(test_utilities OBJECT unit/test_utilities.c)
+add_library(test_utilities OBJECT unit/test_utilities.c
+)
 target_link_libraries(test_utilities PRIVATE igraph)
 use_all_warnings(test_utilities)
 
